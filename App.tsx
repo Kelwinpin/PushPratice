@@ -8,6 +8,9 @@ import { THEME } from './src/theme';
 import { Loading } from './src/components/Loading';
 
 import { CartContextProvider } from './src/contexts/CartContext';
+import { OneSignal } from 'react-native-onesignal';
+
+OneSignal.initialize("f3fba342-c8f3-484b-abfe-be6925ea5e8d")
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
